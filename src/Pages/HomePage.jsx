@@ -1,5 +1,6 @@
 
 import { Box, Container, Typography, useTheme, useMediaQuery } from '@mui/material';
+import CircleButton from "../Components/Shared/Button";
 import bgDesktop from '../assets/home/background-home-desktop.jpg';
 import bgTablet from '../assets/home/background-home-tablet.jpg';
 import bgMobile from '../assets/home/background-home-mobile.jpg';
@@ -31,9 +32,46 @@ function Home() {
       }}
     >
     <Container >
-      <Typography variant="h1">Heading 1</Typography>
-<Typography variant="textPreset7">Navigation Item</Typography>
-<Typography variant="textPreset9">Body Text</Typography>
+      <Box
+          sx={{
+            mt: {
+              xs: '20%',   
+              md: '10%',    
+            },
+          display: 'flex',
+          flexDirection: {
+            xs: 'column',  
+            md: 'row',     
+          },
+          alignItems: {
+            xs: 'center',
+            md: 'flex-start',
+          },
+          justifyContent: 'space-between',
+          gap: { xs: 4, md: 8 }, 
+        }}
+      >
+        <Box sx={{ maxWidth: '600px', textAlign: { xs: 'center', md: 'left' } }}>
+          <Typography variant="textPreset8" gutterBottom>
+            SO YOU WANT TO TRAVEL TO
+          </Typography>
+          <Typography variant="h1" >
+            SPACE
+          </Typography>
+          <Typography variant="textPreset9">
+            Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+              alignSelf: { xs: 'center', md: 'flex-end' },
+           
+          }}
+        >
+          <CircleButton>EXPLORE</CircleButton>
+        </Box>
+      </Box>
       </Container>
       </Box>
   );

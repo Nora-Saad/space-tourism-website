@@ -79,13 +79,15 @@ let theme = createTheme({
       fontSize: '16px',
       lineHeight: 1.2,
       letterSpacing: '2px',
-      textTransform: 'uppercase',
+        textTransform: 'uppercase',
+        color: '#D0D6F9',
     },
     textPreset9: {
       fontFamily: 'Barlow, sans-serif',
       fontSize: '18px',
       lineHeight: 1.8,
-      letterSpacing: '0px',
+        letterSpacing: '0px',
+        color: '#D0D6F9',
     },
     },
     components: {
