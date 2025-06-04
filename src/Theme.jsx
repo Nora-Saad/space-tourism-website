@@ -87,7 +87,18 @@ let theme = createTheme({
       lineHeight: 1.8,
       letterSpacing: '0px',
     },
-  },
+    },
+    components: {
+        MuiCssBaseline: {
+          styleOverrides: {
+            body: {
+              minWidth: '375px',
+              overflowX: 'hidden',
+              backgroundColor: '#0B0D17',
+            },
+          },
+        },
+      },
 });
 
 theme = responsiveFontSizes(theme);
